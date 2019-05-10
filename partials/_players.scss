@@ -1,0 +1,79 @@
+#third {
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.3) 35%, rgba(0,0,0,0.3) 100%), url('../assets/backgrounds/ice_age.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  position: relative;
+}
+
+.playerIntro h5, .playerIntro p {
+  color: white;
+}
+
+.slideItem {
+  width: 40%;
+  height: 400px;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: all 0.6s;
+  position: relative;
+  &:hover {
+    background-color: $lb;
+  }
+  @media (max-width: 1100px) {
+    height: 380px;
+  }
+  @media (max-width: 900px) {
+    height: 300px;
+  }
+  @media (max-width: 700px) {
+    height: 200px;
+  }
+  @media (max-width: 500px) {
+    height: 150px;
+  }
+  @media (max-width: 300px) {
+    height: 100px;
+  }
+}
+
+.slideItem:hover .headshotOverlay {
+  opacity: 1;
+}
+
+.galleryPlayer {
+  padding-bottom: 100px;
+}
+
+.headshotOverlay {
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  bottom: 0;
+  opacity: 0;
+  text-align: center;
+  transition: all 0.5s;
+  @media (max-width: 1140px) {
+    display: none;
+  }
+  h1 {
+    background: white;
+    padding: 10px;
+    font-size: 2.5rem;
+  }
+}
+
+
+
+/* position dots up a bit */
+.flickity-page-dots {
+  display: none;
+}
+
+.flickity-prev-next-button.previous {
+    left: 10px;
+}
+
+.flickity-prev-next-button.next {
+    right: 10px;
+}

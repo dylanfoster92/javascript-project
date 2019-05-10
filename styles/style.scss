@@ -1,0 +1,79 @@
+@import "../partials/utilities";
+@import "../partials/general";
+@import "../partials/navigation";
+@import "../partials/about";
+@import "../partials/hero";
+@import "../partials/players";
+@import "../partials/gallery";
+@import "../partials/game";
+@import "../partials/connect";
+@import "../partials/footer";
+
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1060px) {
+
+  .player {
+    background-position-x: 25%;
+  }
+
+  .intro {
+    width: 50%;
+  }
+
+  .player2 {
+  background-position-x: 100px;
+  }
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+  .smallCircle {
+    display: none;
+  }
+
+  .intro {
+    width: 60%;
+  }
+
+  .player2 {
+    background-position-x: -50px;
+  }
+
+  .galleryItem {
+    width: 50%;
+  }
+
+  .galleryItem.wide {
+    width: 100%;
+  }
+
+  .slideItem {
+    width: 40%;
+    margin: 10px;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+  .intro {
+    width: 70%;
+  }
+
+  .aboutItem {
+    width: 90%;
+  }
+
+  .aboutItemText {
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .player2 {
+    background-position-x: -350px;
+  }
+}

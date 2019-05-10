@@ -1,0 +1,109 @@
+/*NAVIGATION*/
+
+.banner {
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.6) 35%, rgba(0,0,0,0.9) 100%), url('../assets/backgrounds/banner-image.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.banner nav {
+  padding-top: 50px;
+}
+
+.banner ul {
+  margin: 0;
+  padding: 0;
+}
+
+.banner ul li {
+  float: left;
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.banner ul li a {
+  padding: 20px;
+  margin: 0 10px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 150px 0px 150px 0px;
+  .titleItem {
+    padding-bottom: 20px;
+    .toronto {
+      background: #054293;
+      padding: 10px 20px 10px 20px;
+      @media (max-width: 640px) {
+        font-size: 3rem;
+      }
+    }
+    .special {
+      font-family: 'Great Vibes', cursive;
+      text-transform: none;
+      margin-top: -50px;
+      font-size: 18.5rem;
+      opacity: 0.7;
+      @media (max-width: 900px) {
+        font-size: 12.5rem;
+        margin-top: -35px;
+      }
+      @media (max-width: 640px) {
+        font-size: 7.5rem;
+        margin-top: -25px;
+      }
+    }
+    h1 {
+      color: white;
+      text-align: center;
+      margin: 0;
+      font-size: 4.5rem;
+    }
+  }
+}
+
+.subTitle h1 {
+  margin: 0;
+  padding: 100px;
+  text-align: center;
+  color: white;
+}
+
+// MAIN MENU STYLING 
+
+.mainMenu a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s;
+  &:hover {
+    color: #054293;
+  }
+  >li {
+    position: relative;
+  }
+  @media (max-width: 1100px) {
+    display: none;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.banner h2 {
+    padding-top: 50px;
+    margin: 0;
+    color: white;
+    @media (max-width: 1100px) {
+      padding-left: 20px;
+  }
+}

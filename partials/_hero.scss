@@ -1,0 +1,108 @@
+/*HERO INTRO STYLES*/
+
+.heroIntro {
+  position: relative;
+  right: 15%;
+  background-color: rgba(0,0,0,0.9);
+  padding: 50px;
+  width: 40%;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  h3 {
+    padding: 10px;
+    margin: 10px;
+  }
+  p {
+    color: white;
+    font-weight: bold;
+  }
+  @media (max-width: 1060px) {
+    width: 60%;
+    right: 0;
+  }
+  @media (max-width: 768px) {
+    width: 80%;
+    margin-top: 50px;
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.speechBubble {
+  position: relative;
+  background: #054293;
+  display: inline-block;
+  color: white;
+}
+
+.speechBubble:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: #054293;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -10px;
+  margin-bottom: -20px;
+}
+
+span.white {
+  color: white;
+}
+
+span.blue {
+  color: $lb;
+}
+
+/*HERO SECTION BACKGROUND STYLES*/
+
+.hero {
+  background-image: linear-gradient(90deg, rgba(0,0,0,0.2) 35%, rgba(0,0,0,0.2) 100%), url('../assets/backgrounds/ice_age.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+}
+.player {
+  background-image: url(../assets/backgrounds/hero-player.png);
+  background-repeat: no-repeat;
+  background-position-x: 600px;
+  background-position-y: 20px;
+  height: 100%;
+  position: relative;
+  padding-top: 40px;
+}
+
+.player2 {
+  background-image: url(../assets/backgrounds/hero-player-2.png);
+  background-repeat: no-repeat;
+  background-position-x: 350px;
+  background-position-y: -60px;
+  height: 100%;
+  position: relative;
+  padding-top: 40px;
+}
+
+.player3 {
+  background-image: url(../assets/backgrounds/hero-player-3.png);
+  background-repeat: no-repeat;
+  background-position-x: 350px;
+  background-position-y: -60px;
+  height: 100%;
+  position: relative;
+  padding-top: 40px;
+}
+
+.player4 {
+  background-image: url(../assets/backgrounds/hero-player-4.png);
+  background-repeat: no-repeat;
+  background-position-x: 350px;
+  background-position-y: -60px;
+  height: 100%;
+  position: relative;
+  padding-top: 40px;
+}

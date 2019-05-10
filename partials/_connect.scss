@@ -1,0 +1,50 @@
+
+#fifth {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  position: relative;
+}
+
+.connectIntro .button {
+  color: black;
+}
+
+.fa-facebook {
+	font-size: 3rem;
+	padding: 10px;
+}
+
+.fa-twitter-square {
+	font-size: 3rem;
+	padding: 10px;
+}
+
+.fa-instagram {
+	font-size: 3rem;
+	padding: 10px;
+}
+
+.fa-globe-americas {
+	font-size: 3rem;
+	padding: 10px;
+}
+
+a .fab {
+	color: $lb;
+	transition: all 0.3s;
+	&:hover {
+		color: #054293;
+	}
+}
+
+a .fas {
+	color: $lb;
+	transition: all 0.3s;
+	&:hover {
+		color: #054293;
+	}
+}
+
+
+

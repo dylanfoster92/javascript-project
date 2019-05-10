@@ -1,0 +1,123 @@
+#second {
+  position: relative;
+}
+
+.leafsAbout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  align-items: center;
+  padding: 20px;
+  .button {
+    color:black;
+  }
+}
+
+.aboutItemPicture {
+  width: 27%;
+}
+
+.aboutItemText {
+  width: 60%;
+  font-family: 'Lato', sans-serif;
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.leafsIntro {
+  position: relative;
+}
+
+.leafsIntro::before {
+  content: '';
+  position: absolute;
+  left: 140%;
+  top: 20%;
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  border: 20px solid $gr;
+  opacity: 0.2;
+  border-radius: 50%;
+  z-index: 10;
+  @media (max-width: 1060px) {
+    display: none;
+  }
+}
+
+.leafsIntro h4::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  left: -765px;
+  top: -200px;
+  background: transparent;
+  border: 20px solid $gr;
+  opacity: 0.2;
+  border-radius: 50%;
+}
+
+.leafsIntro::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: -285px;
+  left: -850px;
+  background: transparent;
+  border: 30px solid $gr;
+  opacity: 0.2;
+  border-radius: 50%;
+}
+
+.cross {
+  position: absolute;
+  right: 150px;
+  bottom: 100px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  transform: rotate(65deg);
+}
+
+.cross:before, .cross:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 93px;
+  width: 15px;
+  background-color: $lb;
+}
+.cross:before {
+  transform: rotate(45deg);
+}
+.cross:after {
+  transform: rotate(-45deg);
+}
+
+.filledCircle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: -70px;
+  right: 450px;
+  opacity: 0.2;
+  border-radius: 50%;
+  background-color: $gr;
+}
+
+.coverCircle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  bottom: -119px;
+  right: 399px;
+  background: transparent;
+  border: 30px solid $lb;
+  opacity: 0.2;
+  border-radius: 50%;
+}

@@ -1,0 +1,120 @@
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 100px 10px 100px 10px;
+  .game-card {
+    width: 25%;
+    height: 300px;
+    border: 10px solid lightgrey;
+    position: relative;
+    transition: all 0.2s;
+    &:hover {
+      border: 10px solid $lb;
+      -webkit-box-shadow: -1px 0px 14px 1px rgba(0,0,0,0.75);
+      -moz-box-shadow: -1px 0px 14px 1px rgba(0,0,0,0.75);
+      box-shadow: -1px 0px 14px 1px rgba(0,0,0,0.75);
+    }
+    .answer {
+      text-align: center;
+      position: relative;
+      top: 45%;
+      font-size: 3.5rem;
+    }
+  }
+}
+
+.game-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  p {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    font-size: 3.5rem;
+  }
+  &:hover {
+    background: $lb;
+  }
+}
+
+.game-overlay a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+
+.game-overlay:hover a {
+  display: block;
+}
+
+
+.question {
+  text-align: center;
+}
+
+span.dark-blue {
+  color: #054293;
+  text-transform: uppercase;
+}
+
+p.question-text {
+  font-size: 1.8rem;
+}
+
+.answer-counter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .counter {
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    margin: 10px 10px 50px 10px;
+  }
+}
+
+.counter.red {
+  background: red;
+}
+
+.counter.green {
+  background: green;
+}
+
+.question-container.hide {
+  display: none;
+}
+
+p.tally {
+  font-size: 4.0rem;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 300px;
+}
+
+.score.hide {
+  display: none;
+}
+
+p.result {
+  font-size: 4.0rem;
+  padding-top: 225px;
+  padding-bottom: 245px;
+  text-align: center;
+  line-height: 50px;
+}
+
+p.feedback {
+  font-size: 4.0rem;
+  padding-top: 210px;
+  padding-bottom: 210px;
+  line-height: 50px;
+}
