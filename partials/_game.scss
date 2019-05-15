@@ -104,6 +104,10 @@ p.tally {
   display: none;
 }
 
+.name-container.hide {
+  display: none;
+}
+
 p.result {
   font-size: 4.0rem;
   padding-top: 225px;
@@ -117,4 +121,12 @@ p.feedback {
   padding-top: 210px;
   padding-bottom: 210px;
   line-height: 50px;
+}
+
+.name-container form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 40px auto;
+  text-align: center;
 }

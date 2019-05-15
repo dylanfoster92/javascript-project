@@ -40,7 +40,14 @@
 			<h5>Start Playing Below</h5>
 	</div>
 	<div class="game-container wrapper">
-		<div class="question-container question-1">
+		<div class="name-container">
+			<form>
+				<label for="name">What's your name?</label>
+				<input type="text" id="name" name="name" minlength="4" maxlength="15" class="name">
+				<input type="submit" value="Submit" class="submit-name">
+			</form>
+		</div>
+		<div class="question-container question-1 hide">
 			<div class="question">
 				<p class="question-text"><span class="dark-blue">Question:</span> How many Stanley Cups have the Toronto Maple Leafs won?</p>
 			</div>
