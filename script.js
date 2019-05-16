@@ -150,7 +150,7 @@ $(function(){
 						$(".score").removeClass('hide');
 						$(".feedback").remove();
 					}, 1500);
-				$(".score").append(`<p class="tally">You got ${finalScore}/3 correct</p>`);
+				$(".score").append(`<p class="tally">You got ${finalScore}/3 correct, ${userName}</p>`);
 			} else if ($(this).hasClass("guess-3b")) {
 				$(".answer-3").addClass("red");
 				$(".question-3").addClass('hide');
@@ -160,7 +160,7 @@ $(function(){
 						$(".score").removeClass('hide');
 						$(".feedback").remove();
 					}, 1500);
-				$(".score").append(`<p class="tally">You got ${finalScore}/3 correct</p>`);
+				$(".score").append(`<p class="tally">You got ${finalScore}/3 correct, ${userName}</p>`);
 			} else {
 				$(".answer-3").addClass("green");
 				$(".question-3").addClass('hide');
@@ -177,3 +177,20 @@ $(function(){
 		});
 	});
 	}); // DOCUMENT READY ENDS
+
+// Leaderboard setup
+
+// 	const scores = [];
+//     const scoresAdd = (namePlayer,scorePlayer) =>{
+//         scores.push(
+//             {
+//                 name:namePlayer,
+//                 score:scorePlayer
+//             }
+//                 );
+//     }
+  
+//    for (let i =0; i<scores.length;i++) {
+//        console.log(scores[i].name);
+//        console.log(scores[i].score);
+//    }

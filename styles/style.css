@@ -891,9 +891,37 @@ p.feedback {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 200px;
+  width: 50%;
   margin: 40px auto;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 75px; }
+
+input.submit-name {
+  color: black;
+  padding: 10px;
+  display: inline-block;
+  border: 2px solid lightblue;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  letter-spacing: 1px;
+  width: 50%;
+  margin: 10px auto; }
+  input.submit-name:hover {
+    background: lightblue; }
+
+input.name {
+  border: 1px solid grey;
+  width: 75%;
+  margin: 10px auto;
+  padding: 10px; }
+
+.name-container label {
+  line-height: 20px;
+  font-size: 1.2rem;
+  font-weight: bold; }
 
 #fifth {
   background-attachment: fixed;

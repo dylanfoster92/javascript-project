@@ -126,7 +126,38 @@ p.feedback {
 .name-container form {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 50%;
   margin: 40px auto;
   text-align: center;
+  padding-bottom: 75px;
 }
+
+input.submit-name {
+  color: black;
+  padding: 10px;
+  display: inline-block;
+  border: 2px solid $lb;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  letter-spacing: 1px;
+  width: 50%;
+  margin: 10px auto;
+  &:hover {
+    background: $lb;
+  }
+}
+
+input.name {
+  border: 1px solid grey;
+  width: 75%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.name-container label {
+  line-height: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
